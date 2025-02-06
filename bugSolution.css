@@ -1,0 +1,25 @@
+/* bugSolution.css */
+/* Solution for spacing issue: Remove extra spaces */
+.correct-spacing {
+  width: calc(100% - 10px);
+}
+
+/* Solution for inconsistent units: Ensure consistent units or use appropriate conversions */
+.consistent-units {
+  height: calc(50% + 100px); /* Converted em to px (assuming 1em = 16px) */
+}
+
+/* Solution for invalid expressions: Carefully check `calc()` expression validity. */
+.valid-calc {
+  width: calc(100% / 2);
+}
+
+/* Example of an invalid calc expression (will be ignored):*/
+.invalid-calc {
+  width: calc(100% +);
+}
+
+/* Example of a calc expression that might produce unexpected results: */
+.potentially-unexpected {
+  width: calc(100px + 10%); /* 10% of what? It's unclear and might not work as intended.  Units are critical!*/
+}
